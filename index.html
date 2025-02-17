@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <h1 class="logo">My Portfolio</h1>
+        <nav class="navbar">
+            <a href="#about">About</a>
+            <a href="#projects">Education</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="theme-toggle">☀️</button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="left">
+            <h2>Hi, I'm Harsha Gonela</h2>
+        <p>Computer Science & AI Student | Beginner in Frontend Development | Exploring UI/UX Design | Learning at Newton School of Technology</p>
+        <a href="https://www.linkedin.com/in/harsha-gonela-579819323/" class="btn">Connect me On LinkedIn</a>
+        </div>
+        <div class="right">
+             <img src="https://media.licdn.com/dms/image/v2/D4E03AQEqUnEA6zHLFg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723793976836?e=1736985600&v=beta&t=a00ylMWcmxgxc-1DoG7jQ89ZEKujeKan7m4cUbwKdAM
+             
+             " alt="">
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer with experience in creating modern, responsive, and interactive web applications. Skilled in HTML, CSS, JavaScript, and animation libraries.
+        </p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <p>An animated, responsive landing page with sleek designs and interactive elements.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2</h3>
+                <p>Modern portfolio website with light and dark mode and smooth animations.</p>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact Me</h2>
+        <p>I'd love to hear from you! Reach out at:</p>
+        <p>Email: <a href="harsha.gonela2024@nst.rishihood.edu.in">harsha.gonela2024@nst.rishihood.edu.in</a></p>
+    </section>
+
+    <footer class="footer">
+        <p>© 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+    <script>
+        const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    themeToggle.textContent = document.body.classList.contains("light-mode") ? "🌙" : "☀️";
+});
+
+    </script>
+</body>
+</html>
